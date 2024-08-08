@@ -7,7 +7,7 @@ import { technologies } from "../constants";
 
 import { BallCanvas } from "./canvas";
 
-import { textVariant } from '../utils/motion';
+import { textVariant } from '../utils/motion.js';
 
 import { motion } from 'framer-motion'
 
