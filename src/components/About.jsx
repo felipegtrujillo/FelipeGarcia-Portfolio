@@ -2,6 +2,8 @@
 
 import PropTypes from 'prop-types'; // Importa PropTypes
 
+import React, { useState, useEffect } from 'react';
+
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 
@@ -11,6 +13,22 @@ import { fadeIn, textVariant } from '../utils/motion.js';
 import { SectionWrapper } from '../hoc';
 
 const PhotoCard = ({ index, title, icon }) => {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Definir el umbral de pantalla móvil (768px es común)
+    };
+
+    window.addEventListener('resize', handleResize);
+    
+    // Ejecutar al cargar la página
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div 
@@ -21,7 +39,7 @@ const PhotoCard = ({ index, title, icon }) => {
           options={{ max: 45, scale: 1, speed: 450 }}
           className="bg-primary rounded-[20px] py-2 px-2 min-h-[280px] flex justify-evenly items-center flex-col"
         >
-          <img src={icon} alt={title} className="object-cover rounded-[20px] align-middle " />
+          <img src={icon} alt={title} className={`object-cover align-middle ${isMobile ? 'rounded-full w-64 h-64' : 'rounded-[20px]'}`} />
         </div>
       </motion.div> 
     </Tilt>
@@ -48,8 +66,8 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)} 
           className="mt-4 text-secondary text-[30px] max-w-3xl leading-[30px]"
         >
-          Analytical, creative, decisive and goal-oriented person. Graduated in 2013 from the telecommunications computer engineering degree taught by Diego Portales University. With 8 years of experience as a consultant and SAP ABAP developer, both in incident management, projects and improvements.
-          Certified in 2024 in full-stack application development with JavaScript, taught by Desafio Latam and Digital Talent.
+          Analytical, creative, decisive and goal-oriented profesional. Graduated in 2013 from the telecommunications computer engineering degree by Diego Portales University. With 8 years of experience as SAP/ABAP developer in incident management, projects and improvements.
+          Certified in 2024 in full-stack application development with JavaScript by Desafio Latam and Talento Digital.
           In search of projects and challenges in which to contribute with the knowledge and skills acquired.
         </motion.p>
 

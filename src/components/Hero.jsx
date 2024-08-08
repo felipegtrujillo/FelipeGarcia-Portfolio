@@ -29,7 +29,7 @@ const Hero = () => {
     </motion.h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
               A passionate software developer and creative engineer with a strong interest in Full-stack Development.
-              8 years as a SAP/ABAP consultant. in these days with a mayor interest in open techonogys and languaje Development 
+              8 years as a SAP/ABAP consultant. In these days with a mayor interest in open techonogys and sustainable development. 
             </p>
          </div>
          
