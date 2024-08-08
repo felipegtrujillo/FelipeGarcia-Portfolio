@@ -39,7 +39,7 @@ const PhotoCard = ({ index, title, icon }) => {
           options={{ max: 45, scale: 1, speed: 450 }}
           className="bg-primary rounded-[20px] py-2 px-2 min-h-[280px] flex justify-evenly items-center flex-col"
         >
-          <img src={icon} alt={title} className={`object-cover align-middle ${isMobile ? 'rounded-full w-64 h-64' : 'rounded-[20px]'}`} />
+          <img src={icon} alt={title} className={`object-cover align-middle ${isMobile ? 'rounded-[40px] w-64 h-76' : 'rounded-[20px]'}`} />
         </div>
       </motion.div> 
     </Tilt>
