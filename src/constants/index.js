@@ -19,6 +19,7 @@ import {
     desafio,
     ricomida,
     osprey,
+    piesdemercurio,
     bootstrap,
     sequelize
 
@@ -51,13 +52,13 @@ import {
     { name: "JavaScript", icon: javascript, progress: 70, color: "#5f90d3"},
     { name: "CSS3", icon: css, progress: 70, color: "#5f90d3"},
     { name: "Typescript", icon: typescript, progress: 30, color: "#5f90d3"  },
-    { name: "ReactS", icon: reactjs, progress: 55, color: "#5f90d3" },
-    { name: "Angular", icon: angular, progress: 54, color: "#5f90d3"},
+    { name: "React", icon: reactjs, progress: 55, color: "#5f90d3" },
+    { name: "Angular", icon: angular, progress: 40 , color: "#5f90d3"},
     { name: "Tailwind CSS", icon: tailwind, progress: 50, color: "#5f90d3"},
     { name: "Bootstrap", icon: bootstrap, progress: 60, color: "#5f90d3"  },
     { name: "Node JS", icon: nodejs, progress: 80, color: "#5f90d3"  },
-    { name: "Sequelize", icon: sequelize, progress: 68, color: "#5f90d3"  },
-    { name: "Three JS", icon: threejs, progress: 50, color: "#5f90d3"},
+    { name: "Sequelize", icon: sequelize, progress: 60, color: "#5f90d3"  },
+    { name: "Three JS", icon: threejs, progress: 60, color: "#5f90d3"},
     { name: "Git", icon: git, progress: 60, color: "#5f90d3" },
 
     // otras tecnologías...
@@ -127,6 +128,27 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Pies de Mercurio",
+      description:
+        "",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Three JS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind CCS",
+          color: "yellow-text-gradient",
+        },
+      ],
+      image: piesdemercurio,
+      source_code_link: "https://www.piesdemercurio.com/",
+    },
     {
       name: "Ricomida",
       description:

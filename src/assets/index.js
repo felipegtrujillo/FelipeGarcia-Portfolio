@@ -28,6 +28,7 @@ import ricomida from "./ricomida.png";
 import osprey from "./osprey.png";
 import bootstrap from "./tech/bootstrap.svg";
 import express from "./tech/express.png";
+import piesdemercurio from './piesdemercurio.png';
 
 export {
   logo,
@@ -54,6 +55,7 @@ export {
   desafio,
   ricomida,
   osprey,
+  piesdemercurio,
   angular,
   bootstrap,
   express,

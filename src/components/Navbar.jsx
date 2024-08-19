@@ -23,7 +23,7 @@ const Navbar = () => {
               window.scrollTo(0, 0)
            }}
         >
-        {/*  <img src={logoFGT} alt="logo" className="w-17 h-5 object-contain" /> */}
+        
          <p className=" text-white text-[18px] font-bold cursor-pointer flex"> 
          Felipe Garcia T. &nbsp;
          <span className="sm:block hidden">| Full-Stack Developer</span>
@@ -31,7 +31,7 @@ const Navbar = () => {
 
         </Link>
         <ul className="list-nonte hidden sm:flex flex-row gap-4">
-           {navLinks.map((link) => (
+           {navLinks.map((link) => ( 
             <li key={link.id} className={`${ 
               active === link.title
                 ? "text-secondary" 
