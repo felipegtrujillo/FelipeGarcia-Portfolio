@@ -18,6 +18,7 @@ import {
     scl,
     desafio,
     ricomida,
+    lacalchona,
     osprey,
     piesdemercurio,
     bootstrap,
@@ -150,25 +151,25 @@ import {
       source_code_link: "https://www.piesdemercurio.com/",
     },
     {
-      name: "Ricomida",
+      name: "La Calchona",
       description:
         "",
       tags: [
         {
-          name: "Html",
+          name: "Next JS",
           color: "blue-text-gradient",
         },
         {
-          name: "Css",
+          name: "Framer Motion",
           color: "green-text-gradient",
         },
         {
-          name: "Bootstrap",
+          name: "Tailwind CSS",
           color: "yellow-text-gradient",
         },
       ],
-      image: ricomida,
-      source_code_link: "https://felipegtrujillo.github.io/Ricomida/",
+      image: lacalchona,
+      source_code_link: "https://www.lacalchona.cl",
     },
     {
       name: "Osprey",

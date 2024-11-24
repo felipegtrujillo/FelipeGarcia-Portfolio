@@ -23,6 +23,7 @@ import falabella from "./company/falabella.png"
 import desafio from "./company/desafio_latam.png"
 import scl from "./company/scl.png"
 import felipeph from "./felipeportafolio1.png";
+import lacalchona from "./lacalchona.png";
 
 import ricomida from "./ricomida.png";
 import osprey from "./osprey.png";
@@ -59,5 +60,6 @@ export {
   angular,
   bootstrap,
   express,
-  sequelize
+  sequelize,
+  lacalchona
 };
